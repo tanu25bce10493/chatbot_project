@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is an AI-powered chatbot developed to assist students with academic queries related to Artificial Intelligence and Machine Learning. It uses Natural Language Processing (NLP) and Machine Learning (ML) techniques to understand user input, classify intent, and generate relevant responses.
+This project is an AI-powered chatbot designed to assist students with academic queries related to Artificial Intelligence and Machine Learning. It uses Natural Language Processing (NLP) and Machine Learning (ML) techniques to understand user input, classify intent, and generate relevant responses.
 
 ---
 
@@ -42,9 +42,36 @@ Students often face difficulty in getting quick and accurate answers to academic
 
 ---
 
+## ⚠️ Important Note (Folder Structure Issue)
+
+After extracting the project ZIP file, you may notice that a **nested folder with the same name is created** (e.g., `chatbot_project-main/chatbot_project/`).
+
+👉 This can cause errors like:
+
+* `requirements.txt not found`
+* `model.pkl not found`
+
+### ✅ Solution:
+
+Make sure you navigate to the correct folder where the files actually exist.
+
+Example:
+
+```bash
+cd chatbot_project
+```
+
+Then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## ⚙️ Installation & Setup
 
-### 1. Clone the repository
+### 1. Clone or extract the project
 
 ```bash
 git clone <your-repo-link>
@@ -71,9 +98,7 @@ python app.py
 
 ### 5. Open in browser
 
-```
 http://127.0.0.1:5000/
-```
 
 ---
 
@@ -89,7 +114,6 @@ http://127.0.0.1:5000/
 
 ## 📁 Project Structure
 
-```
 chatbot_project/
 │── app.py
 │── train.py
@@ -98,17 +122,16 @@ chatbot_project/
 │── vectorizer.pkl
 │── requirements.txt
 │── README.md
-│
+
 ├── templates/
 │   └── index.html
-│
+
 ├── static/
 │   └── style.css
-│
+
 ├── project_report/
 │   ├── report.pdf
 │   └── sample_output.png
-```
 
 ---
 
@@ -128,10 +151,10 @@ The chatbot successfully responds to user queries related to AI and ML concepts.
 
 ## 🔮 Future Enhancements
 
-* Integration with voice-based input
-* Use of deep learning models (LSTM, Transformers)
+* Voice-based interaction
+* Deep learning models (LSTM, Transformers)
 * Deployment on cloud platforms
-* Implementation of auto-learning capabilities
+* Auto-learning chatbot
 
 ---
 
@@ -146,9 +169,6 @@ The chatbot successfully responds to user queries related to AI and ML concepts.
 
 ## 👨‍💻 Author
 
-TANU GOWDA 25BCE10493
-
-
-Project – Fundamentals in AI & ML
+Student Project – Fundamentals in AI & ML
 
 ---
