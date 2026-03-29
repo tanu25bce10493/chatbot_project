@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🤖 AI Assistant</h2>
+
+        <h4>Quick Questions</h4>
+        <button onclick="fill('What is AI?')">What is AI?</button>
+        <button onclick="fill('Explain ML')">Machine Learning</button>
+        <button onclick="fill('Exam tips')">Exam Tips</button>
+        <button onclick="fill('What is overfitting')">Overfitting</button>
+        <button onclick="fill('What is NLP')">NLP</button>
+
+        <h4>Features</h4>
+        <p>✔ NLP-based chatbot</p>
+        <p>✔ ML classification</p>
+        <p>✔ Real-time responses</p>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+        <h2>💬 Student Assistant</h2>
+
+        <div id="chat-box">
+            <div class="msg bot">👋 Hello! Ask me anything about AI/ML.</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function getTime(){
+    let now = new Date();
+    return now.getHours() + ":" + String(now.getMinutes()).padStart(2,'0');
+}
+
+function sendMessage() {
+    let input = document.getElementById("user-input");
+    let message = input.value;
+    if(message.trim() === "") return;
+
+    let chatBox = document.getElementById("chat-box");
+
+    chatBox.innerHTML += `<div class="msg user">${message} <span>${getTime()}</span></div>`;
+
+    // Typing animation
+    chatBox.innerHTML += `<div class="msg bot typing">Typing...</div>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: message})
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.querySelector(".typing").remove();
+        chatBox.innerHTML += `<div class="msg bot">${data.response} <span>${getTime()}</span></div>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    });
+
+    input.value = "";
+}
+
+function fill(text){
+    document.getElementById("user-input").value = text;
+}
+</script>
+
+</body>
+</html>
