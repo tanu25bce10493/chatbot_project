@@ -2,32 +2,62 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "Good morning"],
-      "responses": ["Hello!", "Hi there!", "Hey! How can I help?"]
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Hi bot", "Hello chatbot"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I assist you today?"]
     },
     {
       "tag": "ai",
-      "patterns": ["What is AI", "Define artificial intelligence"],
-      "responses": ["AI is the simulation of human intelligence in machines."]
+      "patterns": ["What is AI", "Explain artificial intelligence", "Define AI", "AI meaning", "Tell me about AI", "What does AI do"],
+      "responses": ["Artificial Intelligence is the simulation of human intelligence in machines."]
     },
     {
       "tag": "ml",
-      "patterns": ["What is machine learning", "Explain ML"],
-      "responses": ["Machine learning is a subset of AI that learns from data."]
+      "patterns": ["What is machine learning", "Explain ML", "Define ML", "ML meaning", "Tell me about machine learning"],
+      "responses": ["Machine Learning is a subset of AI that allows systems to learn from data."]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": ["What is deep learning", "Explain deep learning", "DL meaning", "Deep learning definition"],
+      "responses": ["Deep learning is a type of ML using neural networks with multiple layers."]
+    },
+    {
+      "tag": "nlp",
+      "patterns": ["What is NLP", "Explain NLP", "Natural language processing meaning", "What does NLP do"],
+      "responses": ["NLP helps computers understand and process human language."]
     },
     {
       "tag": "subjects",
-      "patterns": ["What subjects do I have", "My syllabus"],
+      "patterns": ["What subjects do I have", "My syllabus", "Subjects list", "Courses in semester"],
       "responses": ["You have AI, ML, Cloud Computing, and Cyber Security."]
     },
     {
       "tag": "exam",
-      "patterns": ["How to prepare for exam", "Exam tips"],
-      "responses": ["Practice regularly, revise concepts, and solve previous papers."]
+      "patterns": ["How to prepare for exam", "Exam tips", "Study tips", "How to study", "Preparation strategy"],
+      "responses": ["Revise regularly, practice questions, and focus on weak areas."]
+    },
+    {
+      "tag": "overfitting",
+      "patterns": ["What is overfitting", "Explain overfitting", "Overfitting meaning"],
+      "responses": ["Overfitting occurs when a model memorizes training data but fails on new data."]
+    },
+    {
+      "tag": "underfitting",
+      "patterns": ["What is underfitting", "Underfitting meaning"],
+      "responses": ["Underfitting occurs when a model cannot capture patterns in the data."]
+    },
+    {
+      "tag": "algorithm",
+      "patterns": ["Which algorithm do you use", "What model is used", "Algorithm used"],
+      "responses": ["I use Logistic Regression with TF-IDF vectorization."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Thanks a lot"],
+      "responses": ["You're welcome!", "Happy to help!"]
     },
     {
       "tag": "bye",
-      "patterns": ["Bye", "See you", "Goodbye"],
+      "patterns": ["Bye", "Goodbye", "See you"],
       "responses": ["Goodbye!", "See you later!"]
     }
   ]
