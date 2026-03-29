@@ -1,64 +1,191 @@
 {
   "intents": [
+
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Hi bot", "Hello chatbot"],
-      "responses": ["Hello!", "Hi there!", "Hey! How can I assist you today?"]
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I help you?"]
     },
+
     {
-      "tag": "ai",
-      "patterns": ["What is AI", "Explain artificial intelligence", "Define AI", "AI meaning", "Tell me about AI", "What does AI do"],
+      "tag": "ai_intro",
+      "patterns": ["What is AI", "Define artificial intelligence", "Explain AI", "AI meaning"],
       "responses": ["Artificial Intelligence is the simulation of human intelligence in machines."]
     },
+
     {
-      "tag": "ml",
-      "patterns": ["What is machine learning", "Explain ML", "Define ML", "ML meaning", "Tell me about machine learning"],
-      "responses": ["Machine Learning is a subset of AI that allows systems to learn from data."]
+      "tag": "intelligent_agents",
+      "patterns": ["What is an intelligent agent", "Explain agents in AI", "Types of agents", "Structure of agents"],
+      "responses": ["An intelligent agent perceives its environment and takes actions to achieve goals."]
     },
+
     {
-      "tag": "deep_learning",
-      "patterns": ["What is deep learning", "Explain deep learning", "DL meaning", "Deep learning definition"],
-      "responses": ["Deep learning is a type of ML using neural networks with multiple layers."]
+      "tag": "rationality",
+      "patterns": ["What is rationality in AI", "Define rational agent"],
+      "responses": ["A rational agent acts to achieve the best expected outcome based on available information."]
     },
+
     {
-      "tag": "nlp",
-      "patterns": ["What is NLP", "Explain NLP", "Natural language processing meaning", "What does NLP do"],
-      "responses": ["NLP helps computers understand and process human language."]
+      "tag": "environment",
+      "patterns": ["Types of environment in AI", "What is environment in AI"],
+      "responses": ["Environments can be deterministic, stochastic, fully observable, or partially observable."]
     },
+
     {
-      "tag": "subjects",
-      "patterns": ["What subjects do I have", "My syllabus", "Subjects list", "Courses in semester"],
-      "responses": ["You have AI, ML, Cloud Computing, and Cyber Security."]
+      "tag": "search_algorithms",
+      "patterns": ["What is search in AI", "Explain search algorithms"],
+      "responses": ["Search algorithms are used to explore problem spaces to find solutions."]
     },
+
     {
-      "tag": "exam",
-      "patterns": ["How to prepare for exam", "Exam tips", "Study tips", "How to study", "Preparation strategy"],
-      "responses": ["Revise regularly, practice questions, and focus on weak areas."]
+      "tag": "bfs",
+      "patterns": ["What is BFS", "Explain breadth first search"],
+      "responses": ["BFS explores nodes level by level and guarantees shortest path in unweighted graphs."]
     },
+
+    {
+      "tag": "dfs",
+      "patterns": ["What is DFS", "Explain depth first search"],
+      "responses": ["DFS explores as deep as possible before backtracking."]
+    },
+
+    {
+      "tag": "a_star",
+      "patterns": ["What is A star", "Explain A* algorithm"],
+      "responses": ["A* is an informed search algorithm that uses heuristics to find optimal paths."]
+    },
+
+    {
+      "tag": "knowledge_representation",
+      "patterns": ["What is knowledge representation", "Explain knowledge representation"],
+      "responses": ["Knowledge representation is a method of encoding information so that machines can reason about it."]
+    },
+
+    {
+      "tag": "prolog",
+      "patterns": ["What is Prolog", "Explain Prolog programming"],
+      "responses": ["Prolog is a logic programming language used in AI for problem solving."]
+    },
+
+    {
+      "tag": "probability",
+      "patterns": ["What is probability", "Define probability in ML"],
+      "responses": ["Probability measures the likelihood of an event occurring."]
+    },
+
+    {
+      "tag": "random_variable",
+      "patterns": ["What is random variable", "Explain random variable"],
+      "responses": ["A random variable represents outcomes of a random process."]
+    },
+
+    {
+      "tag": "mean_variance",
+      "patterns": ["What is mean and variance", "Explain variance"],
+      "responses": ["Mean is the average value and variance measures the spread of data."]
+    },
+
+    {
+      "tag": "ml_intro",
+      "patterns": ["What is machine learning", "Explain ML", "Define ML"],
+      "responses": ["Machine Learning is a subset of AI that enables systems to learn from data."]
+    },
+
+    {
+      "tag": "supervised_learning",
+      "patterns": ["What is supervised learning", "Explain supervised learning"],
+      "responses": ["Supervised learning uses labeled data to train models."]
+    },
+
+    {
+      "tag": "unsupervised_learning",
+      "patterns": ["What is unsupervised learning"],
+      "responses": ["Unsupervised learning finds patterns in unlabeled data."]
+    },
+
+    {
+      "tag": "reinforcement_learning",
+      "patterns": ["What is reinforcement learning"],
+      "responses": ["Reinforcement learning trains agents using rewards and penalties."]
+    },
+
+    {
+      "tag": "classification",
+      "patterns": ["What is classification", "Explain classification"],
+      "responses": ["Classification is a supervised learning task that assigns labels to data."]
+    },
+
+    {
+      "tag": "clustering",
+      "patterns": ["What is clustering"],
+      "responses": ["Clustering groups similar data points without labels."]
+    },
+
+    {
+      "tag": "regression",
+      "patterns": ["What is regression"],
+      "responses": ["Regression predicts continuous values."]
+    },
+
     {
       "tag": "overfitting",
-      "patterns": ["What is overfitting", "Explain overfitting", "Overfitting meaning"],
+      "patterns": ["What is overfitting"],
       "responses": ["Overfitting occurs when a model memorizes training data but fails on new data."]
     },
+
     {
       "tag": "underfitting",
-      "patterns": ["What is underfitting", "Underfitting meaning"],
-      "responses": ["Underfitting occurs when a model cannot capture patterns in the data."]
+      "patterns": ["What is underfitting"],
+      "responses": ["Underfitting occurs when a model cannot learn patterns in data."]
     },
+
     {
-      "tag": "algorithm",
-      "patterns": ["Which algorithm do you use", "What model is used", "Algorithm used"],
-      "responses": ["I use Logistic Regression with TF-IDF vectorization."]
+      "tag": "bias_variance",
+      "patterns": ["What is bias and variance"],
+      "responses": ["Bias is error from assumptions, variance is error from sensitivity to data."]
     },
+
+    {
+      "tag": "curse_dimensionality",
+      "patterns": ["What is curse of dimensionality"],
+      "responses": ["It refers to problems caused by high-dimensional data."]
+    },
+
+    {
+      "tag": "nlp",
+      "patterns": ["What is NLP", "Explain NLP"],
+      "responses": ["NLP enables machines to understand human language."]
+    },
+
+    {
+      "tag": "transfer_learning",
+      "patterns": ["What is transfer learning"],
+      "responses": ["Transfer learning uses knowledge from pre-trained models."]
+    },
+
+    {
+      "tag": "sentiment_analysis",
+      "patterns": ["What is sentiment analysis"],
+      "responses": ["Sentiment analysis determines whether text is positive, negative, or neutral."]
+    },
+
+    {
+      "tag": "face_detection",
+      "patterns": ["What is face detection"],
+      "responses": ["Face detection identifies human faces in images."]
+    },
+
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "Thanks a lot"],
+      "patterns": ["Thanks", "Thank you"],
       "responses": ["You're welcome!", "Happy to help!"]
     },
+
     {
       "tag": "bye",
-      "patterns": ["Bye", "Goodbye", "See you"],
+      "patterns": ["Bye", "Goodbye"],
       "responses": ["Goodbye!", "See you later!"]
     }
+
   ]
 }
