@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I help?"]
+    },
+    {
+      "tag": "ai",
+      "patterns": ["What is AI", "Define artificial intelligence"],
+      "responses": ["AI is the simulation of human intelligence in machines."]
+    },
+    {
+      "tag": "ml",
+      "patterns": ["What is machine learning", "Explain ML"],
+      "responses": ["Machine learning is a subset of AI that learns from data."]
+    },
+    {
+      "tag": "subjects",
+      "patterns": ["What subjects do I have", "My syllabus"],
+      "responses": ["You have AI, ML, Cloud Computing, and Cyber Security."]
+    },
+    {
+      "tag": "exam",
+      "patterns": ["How to prepare for exam", "Exam tips"],
+      "responses": ["Practice regularly, revise concepts, and solve previous papers."]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["Bye", "See you", "Goodbye"],
+      "responses": ["Goodbye!", "See you later!"]
+    }
+  ]
+}
