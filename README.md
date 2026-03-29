@@ -2,68 +2,94 @@
 
 ## 📌 Overview
 
-This project is an AI-powered chatbot designed to assist students with academic queries using Natural Language Processing (NLP) and Machine Learning (ML). The chatbot can understand user input, classify intent, and provide meaningful responses.
+This project is an AI-powered chatbot developed to assist students with academic queries related to Artificial Intelligence and Machine Learning. It uses Natural Language Processing (NLP) and Machine Learning (ML) techniques to understand user input, classify intent, and generate relevant responses.
 
 ---
 
 ## 🎯 Problem Statement
 
-Students often face difficulty in getting quick and accurate answers to academic queries. Searching manually or waiting for faculty responses can be time-consuming. This project aims to provide an intelligent chatbot that delivers instant academic assistance.
+Students often face difficulty in getting quick and accurate answers to academic queries. Faculty may not always be available, and searching through study materials can be time-consuming. This project addresses the problem by providing an intelligent chatbot that delivers instant academic assistance.
 
 ---
 
-## 🖼️ Sample Output
+## 🎯 Objectives
 
-![Chatbot Screenshot](screenshot.png)
+* To design and develop an AI-based chatbot
+* To apply NLP techniques for understanding user queries
+* To implement Machine Learning algorithms for classification
+* To provide a user-friendly and interactive interface
 
 ---
 
 ## 🚀 Features
 
 * NLP-based intent recognition
-* Machine Learning (Logistic Regression)
-* TF-IDF vectorization
+* Machine Learning model using Logistic Regression
+* TF-IDF vectorization for text processing
 * Web-based chatbot using Flask
-* Modern responsive UI
-* Suggested queries for user guidance
-* Typing animation and timestamps
+* Modern responsive chat interface
+* Suggested queries for improved usability
+* Real-time interaction
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Flask
-* Scikit-learn
-* HTML, CSS, JavaScript
+* **Programming Language:** Python
+* **Framework:** Flask
+* **Machine Learning:** Scikit-learn
+* **Frontend:** HTML, CSS, JavaScript
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation & Setup
 
-1. Install dependencies:
-   pip install -r requirements.txt
+### 1. Clone the repository
 
-2. Train the model:
-   python train.py
+```bash
+git clone <your-repo-link>
+cd chatbot_project
+```
 
-3. Run the application:
-   python app.py
+### 2. Install dependencies
 
-4. Open in browser:
-   http://127.0.0.1:5000/
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Train the model
+
+```bash
+python train.py
+```
+
+### 4. Run the application
+
+```bash
+python app.py
+```
+
+### 5. Open in browser
+
+```
+http://127.0.0.1:5000/
+```
 
 ---
 
-## 📊 Example Interaction
+## 📊 How It Works
 
-**User:** What is AI?
-**Bot:** Artificial Intelligence is the simulation of human intelligence in machines.
+1. User enters a query
+2. Text is processed using TF-IDF vectorization
+3. Logistic Regression model predicts the intent
+4. Appropriate response is selected from dataset
+5. Response is displayed on the web interface
 
 ---
 
 ## 📁 Project Structure
 
+```
 chatbot_project/
 │── app.py
 │── train.py
@@ -72,28 +98,55 @@ chatbot_project/
 │── vectorizer.pkl
 │── requirements.txt
 │── README.md
-
+│
 ├── templates/
 │   └── index.html
-
+│
 ├── static/
 │   └── style.css
-
+│
 ├── project_report/
 │   ├── report.pdf
 │   └── sample_output.png
+```
 
 ---
 
-## 📌 Future Improvements
+## 📈 Results
 
-* Voice-based interaction
-* Deep learning models (LSTM, Transformers)
-* Deployment on cloud
-* Auto-learning chatbot
+The chatbot successfully responds to user queries related to AI and ML concepts. It provides quick and relevant answers, demonstrating the practical application of NLP and ML techniques.
+
+---
+
+## ⚠️ Limitations
+
+* Limited dataset may affect accuracy
+* Cannot handle complex or unseen queries effectively
+* No deep contextual understanding
+
+---
+
+## 🔮 Future Enhancements
+
+* Integration with voice-based input
+* Use of deep learning models (LSTM, Transformers)
+* Deployment on cloud platforms
+* Implementation of auto-learning capabilities
+
+---
+
+## 📚 References
+
+1. Artificial Intelligence: A Modern Approach – Russell & Norvig
+2. Machine Learning – Ethem Alpaydin
+3. Scikit-learn Documentation
+4. Flask Documentation
 
 ---
 
 ## 👨‍💻 Author
 
-Student Project - Fundamentals in AI & ML
+TANU GOWDA 25BCE10493
+Project – Fundamentals in AI & ML
+
+---
